@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MidtermApp" parent="Theme.AppCompat.Light.NoActionBar">
+
+    <item name="colorPrimary">#FFAC30</item>
+    <item name="colorPrimaryDark">#E2951F</item>
+    <item name="colorAccent">#FFAC30</item>
+
+    <!-- Optional: default background & text -->
+    <item name="android:windowBackground">#F7F6F4</item>
+    <item name="android:textColorPrimary">#000000</item>
+
+</style>
+
+</resources>

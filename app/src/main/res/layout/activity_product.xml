@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Top Bar Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_bar_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icons8_search" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="search"
+                android:padding="12dp"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Shopping Cart Button -->
+        <ImageButton
+            android:id="@+id/btn_shopping_cart"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/__icon__shopping_cart_"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+    <!-- Oil Image -->
+    <ImageView
+        android:layout_width="292.39dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/oil_1"
+        android:scaleType="centerCrop"/>
+
+    <!-- Official Store Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_button_background"
+            app:backgroundTint="#FF9900"
+            android:text="official store"
+            android:textColor="@android:color/white"
+            android:textSize="9dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button_background_blue"
+            app:backgroundTint="#0418ce"
+            android:text="free delivery"
+            android:textColor="@android:color/white"
+            android:textSize="9dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Discusses the factors that make a logo successful by analyzing the research, brainstorming, sketching, and stylistic experiments that led to its development"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="17sp" />
+
+    <!-- Price Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120$"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/originalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="149$"
+            android:textSize="17sp"
+            android:layout_marginStart="8dp"
+            android:textColor="#888888"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnoffers"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:background="@drawable/grey_transparent_button_background"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:stateListAnimator="@null"
+        android:text="Offers"
+        android:textColor="@android:color/white" />
+
+    <!-- Expandable List Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Row 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/arrow_free_delivery"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/outline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/arrow_free_delivery"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:text="various installment options" />
+
+            </RelativeLayout>
+
+            <!-- Row 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/arrow_offers"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/outline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/arrow_offers"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:text="monthly installment" />
+
+            </RelativeLayout>
+
+            <!-- Row 3 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/arrow_ratings"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/outline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/arrow_ratings"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:text="jumia birthday" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- This space will push the buttons to the bottom -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_button_background"
+            android:stateListAnimator="@null"
+            android:text="Add To Cart"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_Call"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/transparent_button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phone_call_svgrepo_com"
+            android:stateListAnimator="@null" />
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/transparent_button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icons8_home"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>
